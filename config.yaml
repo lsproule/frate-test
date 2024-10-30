@@ -1,0 +1,15 @@
+cmake_version: "3.16"
+project_name: FrateProject
+language: cpp
+language_version: "20"
+include_directory: Include
+source_directory: src
+project_version: 0.0.1
+template: shared_lib
+compiler: g++
+build_directory: build
+build_command: echo 'built library'
+source_files:
+    - src/main.cpp
+options: {}
+dependencies: []

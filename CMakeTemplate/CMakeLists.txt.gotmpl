@@ -1,0 +1,47 @@
+cmake_minimum_required(VERSION {{ .CMakeVersion }})
+
+project(
+  {{ .ProjectName }}
+  VERSION {{ .ProjectVersion }}
+  {{- if eq .Language "cpp" }}
+  LANGUAGES CXX
+  {{- end }}
+  {{- if eq .Language "c" }}
+  LANGUAGES C
+  {{- end }}
+)
+
+
+include(FetchContent)
+
+{{- range .Dependencies }}
+FetchContent_Declare(
+    {{ .Name }}
+    GIT_REPOSITORY {{ .GitURL }}
+    GIT_TAG {{- if .Tag }} {{ .Tag }} {{- else }} latest {{- end }}
+)
+FetchContent_MakeAvailable({{.Name}})
+{{- end}}
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_STANDARD {{ .LanguageVersion }})
+
+include_directories(${CMAKE_SOURCE_DIR}/{{ .IncludeDir }})
+set(HEADER_DIR ${CMAKE_SOURCE_DIR}/{{ .IncludeDir }})
+
+add_library({{.ProjectName}} SHARED
+  {{- range .SourceFiles }}
+  {{ . }}
+  {{- end }}
+)
+
+target_link_libraries({{ .ProjectName }} {{- range .Dependencies }}
+{{- if .Link }} {{ .Link }} {{- else }} {{.Name}}{{- end }}
+{{- end}})
+
+set(BUILD_DIR {{ .BuildDir }})
+set_target_properties({{ .ProjectName }} PROPERTIES 
+  RUNTIME_OUTPUT_DIRECTORY ${BUILD_DIR}
+  LIBRARY_OUTPUT_DIRECTORY ${BUILD_DIR}
+  ARCHIVE_OUTPUT_DIRECTORY ${BUILD_DIR}
+)
