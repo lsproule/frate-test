@@ -54,10 +54,10 @@ RM = /usr/local/Cellar/cmake/3.30.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lucas/wrk/testing/lib
+CMAKE_SOURCE_DIR = /Users/lucas/wrk/testing/frate-test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lucas/wrk/testing/lib
+CMAKE_BINARY_DIR = /Users/lucas/wrk/testing/frate-test
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/FrateLib.dir/clean
 CMakeFiles/FrateLib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FrateLib.dir/build.make CMakeFiles/FrateLib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FrateLib.dir/build.make CMakeFiles/FrateLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lucas/wrk/testing/lib/CMakeFiles --progress-num=1,2 "Built target FrateLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lucas/wrk/testing/frate-test/CMakeFiles --progress-num=1,2 "Built target FrateLib"
 .PHONY : CMakeFiles/FrateLib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FrateLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lucas/wrk/testing/lib/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lucas/wrk/testing/frate-test/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FrateLib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lucas/wrk/testing/lib/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lucas/wrk/testing/frate-test/CMakeFiles 0
 .PHONY : CMakeFiles/FrateLib.dir/rule
 
 # Convenience name for target.

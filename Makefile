@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.30.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lucas/wrk/testing/lib
+CMAKE_SOURCE_DIR = /Users/lucas/wrk/testing/frate-test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lucas/wrk/testing/lib
+CMAKE_BINARY_DIR = /Users/lucas/wrk/testing/frate-test
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lucas/wrk/testing/lib/CMakeFiles /Users/lucas/wrk/testing/lib//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lucas/wrk/testing/frate-test/CMakeFiles /Users/lucas/wrk/testing/frate-test//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lucas/wrk/testing/lib/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lucas/wrk/testing/frate-test/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

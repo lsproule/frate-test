@@ -1,5 +1,5 @@
 CMakeFiles/FrateLib.dir/src/main.cpp.o: \
-  /Users/lucas/wrk/testing/lib/src/main.cpp \
+  /Users/lucas/wrk/testing/frate-test/src/main.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__assert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__assertion_handler \

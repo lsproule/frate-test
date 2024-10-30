@@ -1,7 +1,6 @@
 #include <iostream>
 
-class Idk{
-  Idk(){
-    std::cout << "hello from idk" << std::endl; 
-  };
+class Idk {
+public:
+  Idk() { std::cout << "hello from idk" << std::endl; };
 };

@@ -1,12 +1,11 @@
 #include <iostream>
+#include <Frate.hpp>
 
-class Idk{
-  Idk(){
-    std::cout << "hello from idk" << std::endl; 
-  };
-};
+
 
 
 int main(){
+  
+  Idk idk;
   std::cout << "hello from frate" << std::endl;
 }
