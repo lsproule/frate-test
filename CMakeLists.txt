@@ -21,6 +21,7 @@ add_library(FrateLib SHARED
 
 target_link_libraries(FrateLib)
 
+target_include_directories(${CMAKE_SOURCE_DIR}/Include)
 set(BUILD_DIR build)
 set_target_properties(FrateLib PROPERTIES 
   RUNTIME_OUTPUT_DIRECTORY ${BUILD_DIR}
