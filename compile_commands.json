@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/lucas/wrk/testing/lib",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DFrateLib_EXPORTS -I/Users/lucas/wrk/testing/lib/Include -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fPIC -o CMakeFiles/FrateLib.dir/src/main.cpp.o -c /Users/lucas/wrk/testing/lib/src/main.cpp",
+  "file": "/Users/lucas/wrk/testing/lib/src/main.cpp",
+  "output": "CMakeFiles/FrateLib.dir/src/main.cpp.o"
+}
+]

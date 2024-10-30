@@ -1,5 +1,5 @@
 cmake_version: "3.16"
-project_name: FrateProject
+project_name: FrateLib
 language: cpp
 language_version: "20"
 include_directory: Include

@@ -1,0 +1,3 @@
+/Users/lucas/wrk/testing/lib/CMakeFiles/FrateLib.dir
+/Users/lucas/wrk/testing/lib/CMakeFiles/edit_cache.dir
+/Users/lucas/wrk/testing/lib/CMakeFiles/rebuild_cache.dir
